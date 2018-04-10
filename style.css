@@ -22,14 +22,15 @@ body {
 }
 
 h1 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Playfair Display', serif;
 	font-size: 7em;
-	font-weight: normal;
+	font-weight: bold;
 	display: block;
 	margin-bottom: 15px;
 }
 
 h2 {
+	font-family: 'Playfair Display', serif;
 	color: black;
 	font-size: 4.4em;
 	font-weight: normal;
