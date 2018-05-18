@@ -1,0 +1,443 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:Regular,Bold');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:Regular,Bold');
+
+
+/* region General
+/* ----------------------------------------------------------------------------------- */
+
+html,
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 10px;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 7em;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	color: black;
+	font-size: 4.4em;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-size: 2.6em;
+	font-weight: 200;
+}
+
+h4{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+p {
+	color: black;
+	font-size: 1.8em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+	line-height: 1.5;
+	margin-top: 12px;
+}
+
+img {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	align-content: center;
+}
+
+.vcenter{
+	position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Split
+/* ----------------------------------------------------------------------------------- */
+
+.split {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+
+.split-left {
+	width: 40%;
+	left: 0;
+}
+
+.split-right {
+	width: 60%;
+	right: 0;
+	background-color: #E0E0E0;
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Split : Right
+/* ----------------------------------------------------------------------------------- */
+
+.split-right .right-image {
+	width: 80%;
+	margin-left:10%;
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Split : Left
+/* ----------------------------------------------------------------------------------- */
+
+.split-left .left-wrapper {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.split-left .left-wrapper .container-email {
+	margin-top: 30px;
+}
+
+#mce-EMAIL{
+	height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    color: black;
+    font-size: 16px;
+    width: 60%;
+    border-style:solid;
+    border-right: none;
+    border-color:rgba(0,0,0,0.15);
+    font-family: lato,sans-serif;
+    border-radius: 0;
+}
+#mc-embedded-subscribe{
+	display: inline-block;
+    background-color: #4285f4;
+    height: 46px;
+    font-family: lato,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+ 	margin-left: -3px;
+    width: 10%;
+    border-color: #4285f4;
+    border-style:none;
+    border-radius: 0;
+    
+    -webkit-appearance: none;
+    
+    padding:1px 0px!important;
+}
+#mc-embedded-subscribe:hover{
+	color:#fff;
+}
+#mc_embed_signup_scroll{
+	height: 40px;
+}
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Responsive : Extra large
+/* ----------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1400px) {
+
+	.split-left {
+		width: 45%;
+	}
+	
+	.split-right {
+		width: 55%;
+	}
+
+	.split-left .left-wrapper {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	#mc-embedded-subscribe{
+		width: 15%;
+		margin-left: -5px;
+	}
+
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Responsive : Large
+/* ----------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1199px) {
+
+	h1 {
+		font-size: 6em;
+	}
+	
+	h2 {
+		font-size: 4em;
+	}
+	
+	h3 {
+		font-size: 2.2em;
+	}
+	
+	h4{
+		font-size: 1.1em;
+	}
+	
+	p {
+		font-size: 1.6em;
+	}
+
+	.split-left {
+		width: 50%;
+	}
+	
+	.split-right {
+		width: 50%;
+	}
+
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Responsive : Medium
+/* ----------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 991px) {
+	
+	html, body {
+		height: unset;
+		overflow: unset;
+		background: #E0E0E0;
+	}
+
+	.split {
+		position: relative;
+	}
+
+	.split-right {
+		height: 40vh;
+		width: 100%;
+		text-align: center;
+	}
+
+	.split-left {
+		width: 100%;
+	}
+
+	.split-right .right-image {
+		height: 80%;
+		bottom: 0;
+		left: 50%;
+		margin-left: 0;
+		-webkit-transform: translateX(-50%);
+  	transform: translateX(-50%);
+	}
+
+	.split-left .left-wrapper {
+		position: static;
+		-webkit-transform: none;
+		transform: none;
+		padding: 0;
+	}
+
+	.container {
+		padding: 60px;
+	}
+
+	.container-trevor {
+		background: white;
+	}
+	#mc-embedded-subscribe{
+		width: 10%;
+		margin-left: -2px;
+	}
+	.split-left .left-wrapper .container-email {
+		margin-top: -5px;
+	}
+	#mc-embedded-subscribe{
+		height: 42px;
+	}
+
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Responsive : Small
+/* ----------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+	.split-right .right-image {
+		height: 85%;
+	}
+	.split-left .left-wrapper .container-email {
+		margin-top: -5px;
+	}
+
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
+
+/* region Responsive : Extra small
+/* ----------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 575px) {
+
+	h1 {
+		font-size: 5em;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	p {
+		font-size: 1.5em;
+	}
+
+	.container {
+		padding: 40px;
+	}
+	#mc-embedded-subscribe{
+		width: 18%;
+		margin-left: -2px;
+	}
+	#mce-EMAIL{
+		font-size: 12px;
+		border-width: 1px;
+	}
+	.split-left .left-wrapper .container-email {
+		margin-top: -16px;
+	}
+	#mc-embedded-subscribe{
+		height: 42px;
+		margin-top: 19px;
+	}
+
+
+}
+@media only screen and (max-width: 375px) {
+
+	h1 {
+		font-size: 5em;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	p {
+		font-size: 1.5em;
+	}
+
+	.container {
+		padding: 40px;
+	}
+	#mc-embedded-subscribe{
+		width: 24%;
+		margin-left: -2px;
+	}
+	#mce-EMAIL{
+		font-size: 12px;
+		border-width: 1px;
+	}
+	.split-left .left-wrapper .container-email {
+		margin-top: -24px;
+	}
+	#mc-embedded-subscribe{
+		height: 44px;
+		margin-top: 20px;
+	}
+
+
+}
+@media only screen and (max-width: 320px) {
+
+	h1 {
+		font-size: 4em;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 2em;
+	}
+	
+	p {
+		font-size: 1.5em;
+	}
+
+	.container {
+		padding: 40px;
+	}
+	#mc-embedded-subscribe{
+		width: 24%;
+		margin-left: -2px;
+	}
+	#mce-EMAIL{
+		font-size: 12px;
+	}
+	.split-left .left-wrapper .container-email {
+		margin-top: -24px;
+	}
+	#mc-embedded-subscribe{
+		height: 48px;
+		margin-top: 20px;
+	}
+	
+}
+
+/* --------------------------------------------------------------------------------------
+/* endregion                                                                           */
+
