@@ -199,4 +199,8 @@ p.note {
 		font-size: 3.2em;
 	}
 	
+	br {
+		display: none;
+	}
+	
 }
