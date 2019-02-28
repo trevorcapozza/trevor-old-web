@@ -366,6 +366,10 @@ pre > code {
   padding: 1rem 1.5rem;
   white-space: pre; }
 
+code.dark {
+	background: #4C4C4C;
+}
+
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
