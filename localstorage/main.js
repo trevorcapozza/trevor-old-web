@@ -1,16 +1,20 @@
 /* eslint-env browser, jquery */
 
-$(document).ready(function(){
-    $('ul').click(function(){
-        $('ul').toggleClass('active')
-$("section").toggleClass("dark");
-let darkThemeEnabled = $("section").hasClass("dark");
-localStorage.setItem("dark-theme-enabled", darkThemeEnabled);
-    })
-})
+let darkThemeEnabled;
 
-if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
-    $('section').toggleClass('dark');
+$(document).ready(() => {
+	const store = localStorage.getItem("dark-theme-enabled");
+	const bool = JSON.parse(store); // convert "false"/"true" to false/true
+	if (bool) {
+		darkThemeEnabled = true;
+		$("section").toggleClass("dark");
+		$("ul").toggleClass("active");
+	}
 
-    $('ul').toggleClass('active');  
-}
+	$("ul").click(() => {
+		$("ul").toggleClass("active");
+		$("section").toggleClass("dark");
+		darkThemeEnabled = !darkThemeEnabled;
+		localStorage.setItem("dark-theme-enabled", darkThemeEnabled);
+	});
+});
