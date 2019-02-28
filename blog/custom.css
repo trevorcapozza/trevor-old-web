@@ -63,7 +63,11 @@
 .example-header {
   font-weight: 600;
   margin-top: 1.5rem;
-  margin-bottom: .5rem; }
+  margin-bottom: 0.2rem; }
+.timestamp {
+	font-size: 85%;
+	margin-bottom: 10px;
+}
 .example-description {
   margin-bottom: 1.5rem; }
 .example-screenshot-wrapper {
