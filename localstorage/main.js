@@ -1,11 +1,16 @@
 /* eslint-env browser, jquery */
 
-$(document).ready(function() {
-  var darkMode = localStorage.getItem('dark') || false;
-  $('ul').click(function() {
-    $('ul').toggleClass('active')
+$(document).ready(function(){
+    $('ul').click(function(){
+        $('ul').toggleClass('active')
+$("section").toggleClass("dark");
+let darkThemeEnabled = $("section").hasClass("dark");
+localStorage.setItem("dark-theme-enabled", darkThemeEnabled);
+    })
+})
+
+if (JSON.parse(localStorage.getItem('dark-theme-enabled'))) {
     $('section').toggleClass('dark');
-    darkMode = !darkMode;
-    localStorage.setItem("dark", darkMode);
-  });
-});
+
+    $('ul').toggleClass('active');  
+}
