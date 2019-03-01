@@ -67,11 +67,10 @@ ul li span:nth-child(1) {
   
 
 .nav {
-	position: fixed;
     width: 90%;
-    top: 30px;
+    padding-top: 30px;
+	padding-left: 5%;
 	align-items: center;
-	left: 5%;
 }
 
 .nav a {
@@ -89,14 +88,15 @@ ul li span:nth-child(1) {
 }
 
 .nav-right {
-	position: fixed;
+	float: right;
 	right: 5%;
-	top: 30px;
+	padding-top: 5px;
 }
 
 .nav-right a:first-child {
 	margin-right: 50px;
 }
+
 
 
 
