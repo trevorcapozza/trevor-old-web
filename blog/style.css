@@ -28,6 +28,19 @@ body.dark {
 - Media Queries
 */
 
+.home {
+	padding-top: 20px;
+	margin-left: 30px;
+}
+
+.home a {
+	color: #000;
+}
+
+a.dark {
+	color: #fff;
+}
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
