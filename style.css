@@ -13,25 +13,34 @@ body {
   
 
 .nav {
+	position: fixed;
     width: 90%;
-    padding-top: 30px;
+    top: 30px;
 	align-items: center;
-	margin-left: 5%;
-}
-
-.nav p {
-	padding: 0.5em 2.5em;
-	margin: 0px;
-	font-size: 14px;
-	font-weight: 100;
-	float: right;
-	border: solid #027bff 1px;
-	border-radius: 100px;
+	left: 5%;
 }
 
 .nav a {
-	text-decoration: none;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #000;
+	transition: .2s;
+}
+
+.nav a:hover {
+	cursor: pointer;
 	color: #027bff;
+}
+
+.nav-right {
+	position: fixed;
+	right: 5%;
+	top: 30px;
+}
+
+.nav-right a:first-child {
+	margin-right: 50px;
 }
 
 /*---Typography---*/
