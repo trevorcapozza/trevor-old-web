@@ -14,8 +14,8 @@ body {
 
 .nav {
 	position: fixed;
-    width: 90%;
-    top: 30px;
+    	width: 90%;
+    	top: 30px;
 	align-items: center;
 	left: 5%;
 }
