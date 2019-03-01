@@ -10,11 +10,13 @@ $(document).ready(() => {
 		$("body").toggleClass("dark");
 		$("ul").toggleClass("active");
 		$("code").toggleClass("dark");
+		$("a").toggleClass("dark");
 	}
 
 	$("ul").click(() => {
 		$("ul").toggleClass("active");
 		$("body").toggleClass("dark");
+		$("a").toggleClass("dark");
 		$("code").toggleClass("dark")
 		darkThemeEnabled = !darkThemeEnabled;
 		localStorage.setItem("dark-theme-enabled", darkThemeEnabled);
