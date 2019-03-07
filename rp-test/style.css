@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+}
+
+.mana {
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.mana img {
+	width: 300px;
+}
