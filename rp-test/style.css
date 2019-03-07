@@ -14,3 +14,7 @@ body {
 .mana img {
 	width: 300px;
 }
+
+img.mobile {
+	width: 150px;
+}
